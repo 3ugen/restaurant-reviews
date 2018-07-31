@@ -12,6 +12,7 @@ p {
 }
 
 body {
+  display: grid;
   width: 1224px;
   margin: auto;
   background-color: #fdfdfd;
