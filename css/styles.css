@@ -141,7 +141,7 @@ nav h1 a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-}
+  }
 
 .filter-options h2 {
   color: white;
@@ -162,6 +162,13 @@ nav h1 a {
   padding: 0 10px;
   width: 200px;
 }
+
+/* .filter-selectors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+} */
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
