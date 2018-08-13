@@ -82,7 +82,6 @@ h6 {
 }
 
 #footer {
-  grid-area: footer;
   background-color: #444;
   color: #aaa;
   font-size: 8pt;
@@ -90,6 +89,10 @@ h6 {
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.results {
+  width: 100vw;
 }
 
 /* ====================== Navigation ====================== */
