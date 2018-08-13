@@ -24,8 +24,19 @@ body {
   position: relative;
 }
 
-header {
-  grid-area: header;
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 ul,
