@@ -73,10 +73,10 @@ fillCuisinesHTML = (cuisines = self.cuisines) => {
  */
 initMap = () => {
   self.newMap = L.map('map', {
-        center: [40.722216, -73.987501],
-        zoom: 12,
-        scrollWheelZoom: false
-      });
+    center: [40.722216, -73.987501],
+    zoom: 12,
+    scrollWheelZoom: false
+  });
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
     mapboxToken: 'pk.eyJ1IjoiM3VnZW5lIiwiYSI6ImNqazZlMTBraDB5c20zd3Fsa3gyeTJiOGkifQ.5-WHJFWbNpbvVj_QiZjpNg',
     maxZoom: 18,
@@ -158,9 +158,13 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
 createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
 
+   const name = document.createElement('h1');
+  name.innerHTML = restaurant.name;
+  li.append(name);
+
   const image = document.createElement('img');
   image.className = 'restaurant-img';
-//   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  //   image.src = DBHelper.imageUrlForRestaurant(restaurant);
 
   const imgurlbase = DBHelper.imageUrlForRestaurant(restaurant, "small");
   const imgurl1x = imgurlbase + "_1x.jpg";
@@ -169,10 +173,6 @@ createRestaurantHTML = (restaurant) => {
   image.srcset = `${imgurl1x} 300w, ${imgurl2x} 600w`;
   image.alt = restaurant.name + " restaurant promotional image";
   li.append(image);
-
-  const name = document.createElement('h1');
-  name.innerHTML = restaurant.name;
-  li.append(name);
 
   const neighborhood = document.createElement('p');
   neighborhood.innerHTML = restaurant.neighborhood;
@@ -198,6 +198,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     // Add marker to the map
     const marker = DBHelper.mapMarkerForRestaurant(restaurant, self.newMap);
     marker.on("click", onClick);
+
     function onClick() {
       window.location.href = marker.options.url;
     }
