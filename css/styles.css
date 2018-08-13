@@ -299,7 +299,9 @@ header #breadcrumb li a:hover {
 /* .inside header {
   } */
 
-.inside #map-container {}
+.inside #map-container {
+  height: 400px;
+}
 
 .inside #map {
   background-color: #ccc;
