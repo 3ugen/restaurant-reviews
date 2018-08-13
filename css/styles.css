@@ -272,6 +272,10 @@ header #breadcrumb li a:hover {
   /* text-transform: uppercase; */
 }
 
+#restaurants-list>li>p:first-of-type {
+  margin: 1em 0 0;
+}
+
 #restaurants-list p {
   margin: 0;
   font-size: 11pt;
