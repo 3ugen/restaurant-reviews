@@ -237,6 +237,16 @@ header #breadcrumb li a:hover {
   }
 }
 
+#restaurants-list li .listing-header {
+  background-color: #252831;
+  text-align: center;
+  /* padding: 0; */
+}
+
+#restaurants-list li .listing-header h1 {
+  color: #fff;
+}
+
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
