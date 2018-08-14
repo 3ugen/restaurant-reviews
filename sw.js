@@ -15,6 +15,10 @@
             .then(function (cache) {
                 return cache.addAll([
                     '/',
+                    "/css/styles.css",
+                    "/js/dbhelper.js",
+                    "/js/main.js",
+                    "/css/mobile.css"
                 ]);
             });
     };

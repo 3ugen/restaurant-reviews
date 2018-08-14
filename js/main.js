@@ -5,8 +5,8 @@ var map;
 var markers = []
 
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register('/js/sw.js', {
-    scope: '..'
+  navigator.serviceWorker.register('/sw.js', {
+    scope: '/'
   })
   .then((reg) => {
     console.log('Service Worker registration succeeded', reg);
