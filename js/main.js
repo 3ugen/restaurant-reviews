@@ -1,14 +1,14 @@
 let restaurants,
   neighborhoods,
   cuisines
-var newMap
+var map;
 var markers = []
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
 document.addEventListener('DOMContentLoaded', (event) => {
-   initMap(); // added
+  //   initMap(); // added
   fetchNeighborhoods();
   fetchCuisines();
 });
@@ -96,7 +96,8 @@ window.initMap = () => {
   self.map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
     center: loc,
-    scrollwheel: false
+    scrollwheel: false,
+    clickableIcons: false
   });
   updateRestaurants();
 }
@@ -135,7 +136,7 @@ resetRestaurants = (restaurants) => {
 
   // Remove all map markers
   if (self.markers) {
-    self.markers.forEach(marker => marker.remove());
+    self.markers.forEach(marker => marker.setMap(null));
   }
   self.markers = [];
   self.restaurants = restaurants;

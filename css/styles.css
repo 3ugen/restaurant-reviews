@@ -12,7 +12,7 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10pt;
   color: #333;
-  line-height: 1.5;
+  /* line-height: 1.5; */
 }
 
 body {
@@ -37,6 +37,16 @@ menu,
 nav,
 section {
   display: block;
+}
+
+#maincontent {
+  background-color: #f3f3f3;
+  min-height: 100%;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 ul,
@@ -69,16 +79,6 @@ h5,
 h6 {
   font-family: Arial, Helvetica, sans-serif;
   /* margin: 0 0 20px; */
-}
-
-#maincontent {
-  background-color: #f3f3f3;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
 #footer {
