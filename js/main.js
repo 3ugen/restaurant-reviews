@@ -1,5 +1,5 @@
-let restaurants,
-  neighborhoods,
+// let restaurants,
+let neighborhoods,
   cuisines
 var map;
 var markers = []
