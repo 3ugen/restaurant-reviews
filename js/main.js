@@ -4,11 +4,8 @@ if (navigator.serviceWorker) {
   navigator.serviceWorker.register('/sw.js', {
     scope: '/'
   })
-  .then((reg) => {
-    console.log('Service Worker registration succeeded', reg);
-  }).catch((err) => {
-    console.log('Service Worker registration failed', err);
-  });
+  .then(reg => console.log('Service Worker registration succeeded', reg))
+  .catch(err => console.log('Service Worker registration failed', err))
 }
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
