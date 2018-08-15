@@ -151,25 +151,36 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
  * Create review HTML and add it to the webpage.
  */
 createReviewHTML = (review) => {
-  const li = document.createElement('li');
-  const name = document.createElement('p');
-  name.innerHTML = review.name;
-  li.appendChild(name);
+	const li = document.createElement('li');
 
-  const date = document.createElement('p');
-  date.innerHTML = review.date;
-  li.appendChild(date);
+	const div = document.createElement('div');
+	div.classList.add('review-header');
 
-  const rating = document.createElement('p');
-  rating.innerHTML = `Rating: ${review.rating}`;
-  li.appendChild(rating);
+	const name = document.createElement('p');
+	name.classList.add('review-name');
+	name.innerHTML = review.name;
+	div.appendChild(name);
+  
+	const date = document.createElement('p');
+	date.classList.add('review-date');
+	date.innerHTML = review.date;
+	div.appendChild(date);
 
-  const comments = document.createElement('p');
-  comments.innerHTML = review.comments;
-  li.appendChild(comments);
+	li.appendChild(div);
 
-  return li;
-}
+	const rating = document.createElement('p');
+	rating.classList.add('review-rating');
+	rating.innerHTML = `Rating: ${review.rating}`;
+	li.appendChild(rating);
+
+	const comments = document.createElement('p');
+	comments.classList.add('review-comments');
+  
+	comments.innerHTML = review.comments;
+	li.appendChild(comments);
+
+	return li;
+};
 
 /**
  * Add restaurant name to the breadcrumb navigation menu
