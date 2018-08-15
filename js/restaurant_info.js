@@ -2,6 +2,14 @@
  * Initialize map as soon as the page is loaded.
  */
 
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register('/sw.js', {
+    scope: '/'
+  })
+  .then(reg => console.log('Service Worker registration succeeded', reg))
+  .catch(err => console.log('Service Worker registration failed', err))
+}
+
 /**
  document.addEventListener('DOMContentLoaded', (event) => {
   initMap();

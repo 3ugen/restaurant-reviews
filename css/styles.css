@@ -37,6 +37,7 @@ menu,
 nav,
 section {
   display: block;
+  width: 100%;
 }
 
 ul,
