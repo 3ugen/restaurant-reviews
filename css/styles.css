@@ -359,6 +359,10 @@ header #breadcrumb li a:hover {
 /* #restaurant-container {
   } */
 
+#restaurant-hours {
+    margin: auto auto 1em
+  }
+
 #reviews-container {
   padding: 30px 40px 80px;
   display: flex;
