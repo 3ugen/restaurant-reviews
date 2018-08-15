@@ -1,9 +1,3 @@
-// let restaurants,
-// let neighborhoods,
-  // cuisines
-// var map;
-// var markers = []
-
 if (navigator.serviceWorker) {
   navigator.serviceWorker.register('/sw.js', {
     scope: '/'
