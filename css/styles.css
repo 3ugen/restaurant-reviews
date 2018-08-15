@@ -39,16 +39,6 @@ section {
   display: block;
 }
 
-#maincontent {
-  background-color: #f3f3f3;
-  min-height: 100%;
-  /* display: flex; */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 ul,
 li {
   font-family: Arial, Helvetica, sans-serif;
@@ -69,6 +59,26 @@ a:focus {
 
 a img {
   border: none 0px #fff;
+}
+
+#maincontent {
+  background-color: #f3f3f3;
+/*   min-height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#restaurant-container {
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #fff;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -301,6 +311,7 @@ header #breadcrumb li a:hover {
 
 .inside #map-container {
   height: 400px;
+  width: 100%;
 }
 
 .inside #map {
