@@ -10,7 +10,7 @@ class DBHelper {
   static get DATABASE_URL() {
 //     const port = 80
     // Change this to your server port
-    return `http://ebdev.me:${port}/data/restaurants.json`;
+    return `https://ebdev.me:${port}/data/restaurants.json`;
   }
 
   /**
