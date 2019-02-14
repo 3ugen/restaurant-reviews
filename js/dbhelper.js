@@ -162,12 +162,12 @@ class DBHelper {
   //   }
   static imageUrlForRestaurant(restaurant, type) {
     if (!type) {
-      return (`/img/${restaurant.photograph}`);
+      return (`/restaurant-reviews/img/${restaurant.photograph}`);
     }
     if (restaurant.photograph) {
-      return `/img/${type}/${restaurant.photograph}`;
+      return `/restaurant-reviews/img/${type}/${restaurant.photograph}`;
     }
-    return `/img/${type}/${restaurant.id}`;
+    return `/restaurant-reviews/img/${type}/${restaurant.id}`;
   }
 
   /**
