@@ -4,7 +4,7 @@
 
 ## Project Description
 
-A basic app that uses a filter to display restaurants by type and neighbourhod.
+A basic app that uses a filter to display restaurants by type and neighbourhood.
 
 ## Code dependencies
 
