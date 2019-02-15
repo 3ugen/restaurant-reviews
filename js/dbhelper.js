@@ -11,7 +11,7 @@ class DBHelper {
 //     const port = 80
     // Change this to your server port
 //     return `http://ebv-gh.github.io/restaurant-reviews:${port}/data/restaurants.json`;
-    return `http://ebdev.me/restaurant-reviews/data/restaurants.json`;
+    return `https://ebdev.me/restaurant-reviews/data/restaurants.json`;
   }
 
   /**
