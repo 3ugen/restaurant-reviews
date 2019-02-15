@@ -1,5 +1,5 @@
 # _Project_: Restaurant Reviews App
-#### _Udacity Front-End Web Developer Nanodegree_
+_Udacity Front-End Web Developer Nanodegree_
 ---
 
 ## Project Description
@@ -12,7 +12,9 @@ A basic app that uses a filter to display restaurants by type and neighbourhood.
 + [adactico's](https://github.com/adactio) [basicServiceWorker](https://gist.github.com/adactio/fbaa3a5952774553f5e7)
 + [Google Maps API](https://cloud.google.com/maps-platform/)
 
-## To run the app:
+## How to run the app loccaly:
+
+The app is configured to run with my domain name: `ebdev.me`, but you can make the necessary changes and after run it by following the steps below. 
 
 1. In your terminal, navigate into the app folder and:
     + if you have python2 run: `python -m SimpleHTTPServer 8000`
@@ -47,3 +49,5 @@ A basic app that uses a filter to display restaurants by type and neighbourhood.
 ├── restaurant.html
 └── sw.js
 ```
+## QA:
+Q: Can I make it work on both https and http?
